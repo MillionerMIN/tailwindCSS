@@ -8,13 +8,42 @@
   <title>TailwindCSS</title>
 </head>
 <body>
-  <h1 class="uppercase  font-bold text-xl text-lime-500">
-    lillo
-  </h1>
-  <ul class="font-semibold text-gray-500">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+  <!--header-->
+  <header class="px-2 border-b">
+    <a class="uppercase  font-bold text-xl text-lime-500">
+      lillo
+    </a>
+    <nav>
+      <ul class="font-semibold text-gray-500">
+        <li><a class="inline-block py-3 px-2" href="#">Home</a></li>
+        <li><a class="inline-block py-3 px-2" href="#">About</a></li>
+        <li><a class="inline-block py-3 px-2" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--breadcrumbs-->
+  <main>
+    <div>
+      <div class="py-4 overflow-y-auto whitespace-nowrap">
+        <a class="text-gray-600" href="#">Home</a>
+        <span class="text-gray-600 mx-2">&gt;</span>
+        <a class="text-gray-600" href="#">News</a>
+        <span class="text-gray-600 mx-2">&gt;</span>
+        <a class="text-gray-600" href="#">Tech</a>
+      </div>
+    </div>
+  </main>
+  <!--footer-->
+  <footer class="text-gray-600 border-t mt-10 px-2">
+    <div>
+      <div>
+        <h6 class="font-semibold text-gray-700">Company</h6>
+        <ul>
+          <li><a class="text-gray-500" href="#">Team</a></li>
+          <li><a class="text-gray-500" href="#">About us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
